@@ -1,0 +1,378 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  font-family: sans-serif;
+}
+
+.cursor {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background-color: #e77b29;
+  position: fixed;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.head {
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid#555;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.hamburger {
+  height: 100%;
+  width: 8%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: black;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 30px 20px 30px;
+}
+
+.carl {
+  height: 100%;
+  width: 65%;
+  font-size: 78px;
+  font-weight: 700;
+  margin-right: -150px;
+}
+
+.paragraph {
+  width: 50%;
+  padding-left: 70px;
+}
+#content {
+  width: 100%;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  padding-top: 15px;
+}
+
+.click {
+  background-color: #d9d9d9;
+  text-align: center;
+  border: none;
+  height: 32px;
+  width: 100px;
+  font-size: 18px;
+  border-radius: 30px;
+}
+
+.pictures {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.images {
+  width: 100%;
+  height: 180px;
+  padding: 30px;
+  /* background-color: black; */
+  display: flex;
+  margin-top: -40px;
+}
+
+.span1 {
+  height: 100%;
+  width: 100%;
+  background-image: url(./assets/images/span1.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.span6 {
+  width: 10%;
+  height: 100%;
+  background-image: url(./assets/images/span6.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+}
+
+.span2 {
+  background-image: url(./assets/images/span2.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 90%;
+  height: 100%;
+  margin-left: 30px;
+  border-radius: 30px;
+}
+
+.span3 {
+  background-image: url(./assets/images/span3.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.span5 {
+  background-image: url(./assets/images/span5.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 60%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.span4 {
+  background-image: url(./assets/images/span4.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 40%;
+  height: 100%;
+  border-radius: 30px;
+  margin-left: 30px;
+}
+
+.services {
+  padding: 30px;
+}
+
+.service {
+  height: 60px;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 65px;
+}
+
+.serviceList {
+  height: 85px;
+  width: 100%;
+  font-size: 32px;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  /* padding-bottom: 50px; */
+  /* margin-top: 30px; */
+  /* align-items: center; */
+  display: flex;
+  align-items: center;
+}
+
+.projects {
+  padding: 30px;
+}
+.protitle {
+  height: 60px;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 65px;
+  margin-bottom: 30px;
+}
+
+.visualAesthetic {
+  display: flex;
+  gap: 40px;
+}
+
+.project1 {
+  height: 570px;
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 40px;
+  display: grid;
+  justify-self: center;
+  align-self: end;
+  background-image: url(./assets/images/project1.jpg);
+}
+
+.project2 {
+  height: 570px;
+  width: 50%;
+  display: grid;
+  background-size: cover;
+  border-radius: 40px;
+  background-position: center;
+  background-image: url(./assets/images/project2.jpg);
+}
+
+.visual {
+  height: 32px;
+  width: 90px;
+  font-size: 18px;
+  font-weight: 500;
+  justify-self: start;
+  align-self: end;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  background-color: #e9adbe;
+  display: flex;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.aesthetic {
+  height: 32px;
+  width: 120px;
+  font-size: 18px;
+  font-weight: 500;
+  justify-self: start;
+  align-self: end;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  background-color: #ea9e68;
+  display: flex;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.allprojects {
+  width: 100%;
+  height: 65px;
+  border-radius: 30px;
+  border: 2px solid black;
+  text-align: center;
+  margin-top: 50px;
+  background-color: white;
+  font-size: 25px;
+}
+
+.journals {
+  padding: 30px;
+}
+
+.jourtitle {
+  height: 60px;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 65px;
+  margin-bottom: 30px;
+}
+
+.jourproperty {
+  display: flex;
+  justify-content: space-between;
+}
+.journalimg {
+  height: 400px;
+  width: 410px;
+  border-radius: 40px;
+  background-position: center;
+  background-size: cover;
+}
+#journal1 {
+  background-image: url(./assets/images/journal1.jpg);
+}
+#journal2 {
+  background-image: url(./assets/images/journal2.jpg);
+}
+#journal3 {
+  background-image: url(./assets/images/journal3.jpg);
+}
+
+.journaldate {
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 355px;
+  font-size: 17px;
+  color: gray;
+}
+
+.jourdesign {
+  font-size: 25px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 220px;
+}
+
+.footer {
+  margin-top: 100px;
+  height: 660px;
+  width: 100%;
+  border-radius: 40px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.idea {
+  justify-self: center;
+  color: white;
+  font-size: 87px;
+  font-weight: 600;
+}
+
+#shedule {
+  background-color: white;
+  width: 290px;
+  height: 75px;
+  border: 0;
+  border-radius: 40px;
+  font-size: 25px;
+}
+
+.nav {
+  height: 30px;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.nav a {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+.nayzak {
+  font-size: 18px;
+  color: #afadad;
+}
